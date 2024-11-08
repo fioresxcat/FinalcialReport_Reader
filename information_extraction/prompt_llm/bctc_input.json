@@ -1,0 +1,77 @@
+{
+    "doc_name": "Báo cáo tài chính",
+    "requirements": {
+        "business_registration": {
+            "description": "Số đăng ký kinh doanh của đơn vị làm báo cáo tài chính.",
+            "output_type": "string"},
+        "address": {
+            "description": "Địa chỉ của đơn vị làm báo cáo tài chính, thường đi sau cụm \"Địa chỉ\" hoặc tương tự.",
+            "output_type": "string"},
+        "phone_number": {
+            "description": "Số điện thoại của đơn vị làm báo cáo tài chính, thường đi sau cụm \"Điện thoại\" hoặc \"SĐT\" hoặc tương tự.",
+            "output_type": "string"},
+        "fax_number": {
+            "description": "Số fax của đơn vị làm báo cáo tài chính, thường đi sau cụm \"Fax\".",
+            "output_type": "string"},
+        "email": {
+            "description": "Email của đơn vị làm báo cáo tài chính, thường đi sau cụm \"Email\" hoặc \"E-mail\".",
+            "output_type": "string"},
+        "CDKT_table_name": {
+            "description": "Tên của bảng cân đối kế toán, có thể có nhiều tên bảng.",
+            "output_type": "string"},
+        "CDKT_table_template": {
+            "description": "Mẫu bảng cân đối kế toán, thường đi sau từ \"Mẫu số:\", ở gần tên bảng cân đối kế toán.",
+            "output_type": "string"},
+        "CDKT_circular_number": {
+            "description": "Số thông tư của bảng cân đối kế toán, thường đi sau cụm \"thông tư số\", có 3 chữ số.",
+            "output_type": "string"},
+        "CDKT_company_name": {
+            "description": "Tên của đơn vị làm bảng cân đối kế toán, thường đi sau cụm \"Tên người nộp thuế\" hoặc tương tự, nằm ở gần tên bảng cân đối kế toán.",
+            "output_type": "string"},
+        "CDKT_doi": {
+            "description": "Thời điểm lập bảng cân đối kế toán, thường có cụm từ ngày tháng năm, trả về theo format <ngày dd tháng mm năm yyyy>.",
+            "output_type": "string"},
+        "CDKT_tax_code": {
+            "description": "Mã số thuế của đơn vị làm bảng cân đối kế toán, thường đi sau cụm \"Mã số thuế\", ở gần bảng cân đối kế toán.",
+            "output_type": "string"},
+        "currency": {
+            "description": "Đơn vị tiền tệ sử dụng trong báo cáo tài chính, thường đi sau cụm từ \"Đơn vị\" hoặc \"Đơn vị tính\" hoặc tương tự.",
+            "output_type": "string"},
+        "KQKD_table_name": {
+            "description": "Tên của bảng kết quả kinh doanh, có thể có nhiều tên bảng.",
+            "output_type": "string"},
+        "KQKD_company_name": {
+            "description": "Tên của đơn vị làm bảng kết quả kinh doanh, thường đi sau cụm \"Tên người nộp thuế\" hoặc tương tự, ở gần tên bảng kết quả kinh doanh.",
+            "output_type": "string"},
+        "KQKD_table_template": {
+            "description": "Mẫu bảng kết quả kinh doanh, thường đi sau từ \"Mẫu số:\", ở gần tên bảng kết quả kinh doanh.",
+            "output_type": "string"},
+        "KQKD_circular_number": {
+            "description": "Số thông tư của bảng kết quả kinh doanh, thường đi sau cụm \"thông tư số\", có 3 chữ số.",
+            "output_type": "string"},
+        "KQKD_tax_code": {
+            "description": "Mã số thuế của đơn vị làm bảng kết quả kinh doanh, thường đi sau cụm \"Mã số thuế\", ở gần bảng kết quả kinh doanh.",
+            "output_type": "string"},
+        "tax_period": {
+            "description": "Kỳ tính thuế, thường là năm tính thuế, trả về theo định dạng <Năm yyyy>.",
+            "output_type": "string"},
+        "BCLCTT_table_name": {
+            "description": "Tên của bảng báo cáo lưu chuyển tiền tệ, có thể có nhiều tên bản.",
+            "output_type": "string"},
+        "BCLCTT_method": {
+            "description": "Phương pháp báo cáo \"trực tiếp\" hoặc \"gián tiếp\".",
+            "output_type": "string"},
+        "BCLCTT_table_template": {
+            "description": "Mẫu bảng báo cáo lưu chuyển tiền tệ, thường đi sau từ \"Mẫu số\", ở gần tên bảng bảo cáo lưu chuyển tiền tệ.",
+            "output_type": "string"},
+        "BCLCTT_circular_number": {
+            "description": "Số thông tư của bảng báo cáo lưu chuyển tiền tệ, thường đi sau cụm \"thông tư số\", có 3 chữ số.",
+            "output_type": "string"},
+        "BCLCTT_company_name": {
+            "description": "Tên của đơn vị làm bảng báo cáo lưu chuyển tiền tệ, thường đi sau cụm \"Tên người nộp thuế\" hoặc tương tự, ở gần tên bảng báo cáo lưu chuyển tiền tệ.",
+            "output_type": "string"},
+        "BCLCTT_tax_code": {
+            "description": "Mã số thuế của đơn vị làm bảng báo cáo lưu chuyển tiền tệ, thường đi sau cụm \"Mã số thuế\", ở gần tên bảng báo cáo lưu chuyển tiền tệ.",
+            "output_type": "string"}
+    }
+}

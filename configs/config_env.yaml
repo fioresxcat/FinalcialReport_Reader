@@ -1,0 +1,11 @@
+vllm_server: # config of vllm server
+  ip: '0.0.0.0'    # ip of vllm server
+  port: '8011'  # port of vllm server
+  api_key: "EMPTY"  # port of vllm server
+
+
+triton_server: # config of triton server
+  ip: '0.0.0.0'    # ip of triton server
+  port: '6001'  # port of triton server, common config of grpc port is 8001
+  MAX_RETRY: 3
+  SSL_ENABLE: 0

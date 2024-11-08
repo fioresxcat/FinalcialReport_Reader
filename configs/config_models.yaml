@@ -1,0 +1,56 @@
+triton_models:
+  text_detection:
+    model_spec_name: General_text_detection
+    box_thresh: 0.3
+    model_spec_version: 12023122101003
+    input_name: input
+    input_type: UINT8
+    output_name: output
+    request_timeout: 60.0
+    max_batch_size: 1
+
+
+  ocr:
+    model_spec_name: General_ocr
+    model_spec_version: 12024031601005
+    input_name: input
+    input_shape: [40, 416, 3]
+    input_type: FP32
+    max_sequence_length: 31
+    charset: "&1#@'()+,-./0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ_`abcdefghijklmnopqrstuvwxyz<>ÀÁÂÃÇÈÉÊÌÍÒÓÔÕÙÚÝàáâãçèéêìíòóôõùúýĂăĐđĨĩŨũƠơƯưẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹ’“”;* $%"
+    max_batch_size: 192
+    output_name: output
+    request_timeout: 60.0
+
+
+  table_detection:
+    model_spec_name: General_table_detection
+    conf_threshold: 0.7
+    iou_threshold: 0.5
+    input_shape: [640, 640, 3]
+    model_spec_version: 12024032901009
+    input_name: images
+    input_type: FP32 
+    output_name: output0
+    request_timeout: 60.0
+    max_batch_size: 2
+
+
+  table_structure:
+    model_spec_name: General_table_structure
+    conf_threshold: 0.3
+    model_spec_version: 12024032901010
+    input_name: input
+    input_type: FP32 
+    output_name: output
+    request_timeout: 60.0
+    max_batch_size: 1
+
+
+vllm_models:
+    base-model:
+        base_model_name: Qwen2.5-7B-Instruct-GPTQ-Int8
+        lora_name: /models/Qwen2.5-7B-Instruct-GPTQ-Int8
+        max_tokens: 4096
+        temperature: 0
+        top_p: 1
